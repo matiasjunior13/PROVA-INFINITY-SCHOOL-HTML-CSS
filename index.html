@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Prova - CSS Avançado</title>
+<style>
+
+:root {
+    --font-size-h1: 30px;
+    --font-size-p: 20px;
+    --spacing: 14px;
+    color: white;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    padding: var(--spacing);
+    margin: 0;
+}
+
+h1 {
+    font-size: var(--font-size-h1);
+    margin-bottom: var(--spacing);
+    text-align: center;
+    color: lightgray;
+}
+
+h3 {
+    margin-bottom: var(--spacing);
+    text-align: center;
+    color:  white;
+}
+
+
+p {
+    font-size: var(--font-size-p);
+    margin-bottom: var(--spacing);
+    }
+
+main {
+    max-width: 800px;
+    margin: auto;
+    background-color:brown;
+    padding: var(--spacing);
+    border-radius: 25px;
+}
+
+@media (min-width: 600px) {
+:root{
+    --font-size-h1: 32px;
+    --font-size-p: 18px;
+    --spacing: 24px;
+    background-color:rgb(221, 96, 96);
+    color: yellow;
+    }
+}
+
+@media (min-width: 1024px) {
+    :root {
+    --font-size-h1: 40px;
+    --font-size-p: 20px;
+    --spacing: 32px;
+    }
+}
+</style>
+</head>
+<body>
+<main>
+    <h1>Seja bem-vindo!</h1>
+    <h3>Infinity School</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit tenetur impedit ex ipsum quos. Debitis quod placeat sed voluptatibus accusamus, recusandae maiores necessitatibus quidem sunt dolor eligendi nam, ratione sapiente?
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ipsam rem obcaecati possimus perspiciatis dignissimos autem facilis itaque animi. Mollitia quas facere quis sequi, modi eum omnis neque quam aspernatur?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum exercitationem illo vitae quos eum totam iste ducimus nemo neque, facilis sapiente nam provident quibusdam veritatis, reprehenderit repellat magnam ratione libero.</p>
+</main>
+</body>
+</html>
